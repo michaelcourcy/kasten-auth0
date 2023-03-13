@@ -8,10 +8,10 @@ and Kasten can use it to allow your user accessing Kasten.
 - Kubernetes up and running 
 - An ingress controller with a valid certificate 
 
-The goal is not to explain how we obtained those prerequisite because it will take us 
+The goal is not to explain how we obtained those prerequisites because it will take us 
 too far from our original goal but here is the example used for this tutorial
 
-1. a kubernetes cluster up and running in digital ocean 
+1. a kubernetes cluster up and running
 ```
 kubectl version  --short
 Client Version: v1.24.0
@@ -19,7 +19,7 @@ Kustomize Version: v4.5.4
 Server Version: v1.25.4
 ```
 
-3. Certmanager to leverage letencrypt and obtain valid certificate 
+3. Certmanager to leverage letsencrypt and obtain valid certificate 
 ```
 helm list -n cert-manager
 NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
@@ -75,7 +75,7 @@ rbac:
 ```
 
 The annotation `external-dns.alpha.kubernetes.io/hostname: mcourcydemo.dev.do.kasten.io` will make sure that 
-load balancer ip used by the nginx controller will be associated the name mcourcydemo.dev.do.kasten.io.
+load balancer ip used by the nginx controller will be associated with the name mcourcydemo.dev.do.kasten.io.
 
 
 ## Create an account with Okta Auth0 
