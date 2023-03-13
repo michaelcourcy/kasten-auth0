@@ -11,7 +11,7 @@ and Kasten can use it to allow your user accessing Kasten.
 The goal is not to explain how we obtained those prerequisites because it will take us 
 too far from our original goal but here is the example used for this tutorial
 
-1. a kubernetes cluster up and running
+1. A kubernetes cluster up and running
 ```
 kubectl version  --short
 Client Version: v1.24.0
@@ -19,7 +19,7 @@ Kustomize Version: v4.5.4
 Server Version: v1.25.4
 ```
 
-3. Certmanager to leverage letsencrypt and obtain valid certificate 
+3. Certmanager to leverage letsencrypt and obtain valid certificate and use them with ingress 
 ```
 helm list -n cert-manager
 NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
