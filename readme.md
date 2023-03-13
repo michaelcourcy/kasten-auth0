@@ -78,9 +78,11 @@ The annotation `external-dns.alpha.kubernetes.io/hostname: mcourcydemo.dev.do.ka
 load balancer ip used by the nginx controller will be associated with the name mcourcydemo.dev.do.kasten.io.
 
 
-## Create an account with Okta Auth0 
+## Create an account in Auth0
 
 Go to [Auth0](https://auth0.com) and create a free account. 
+
+## Create an application
 
 Create a regular web application 
 ![Create a regular web application](./images/create-web-application.png)
