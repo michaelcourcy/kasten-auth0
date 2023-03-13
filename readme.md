@@ -1,3 +1,8 @@
+# Goal 
+
+Demonstrate how to use [Auth0](https://auth0.com) with kasten. Auth0 is also an OIDC provider 
+and Kasten can use it to allow your user accessing Kasten. 
+
 # Prequisite 
 
 - Kubernetes up and running 
@@ -168,3 +173,6 @@ You should be redirected to the auth0 login
 
 Authenticate and you'll be redirected to Kasten 
 ![Redirect to Kasten with the identity of the user](./images/redirect-to-kasten.png)
+
+As you can see the user michael as a limited access and can't see any namespaces, this is expected because no RBAC 
+has been defined yet.
